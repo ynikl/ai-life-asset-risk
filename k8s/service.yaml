@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: asset-risk-service
+spec:
+  selector:
+    app: asset-risk
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: ClusterIP
